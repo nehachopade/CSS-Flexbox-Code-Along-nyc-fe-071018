@@ -6,18 +6,57 @@ body {
 
 header {
   background-color: blue;
-  height: 100%;
+  height: 80px;
   width: 100%;
+  flex-shrink: 0
 }
+,p;.[]'/
 
+l nbvv m,
 main {
   background-color: white;
   width: 100%;
   height: 100%;
+  display:flex;
+
+  /*flex-direction: row;
+  flex-wrap: wrap;*/
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+  
 }
 
 footer {
   background-color: red;
-  height: 100%;
+  height: 80px;
   width: 100%;
+  flex-shrink: 3
+}
+.flex-container {
+  
+  width: 100vw;
+  height:100vh;
+}
+
+.item{
+  height: 100px;
+  
+  margin: 5px;
+  background: #FCF2EC;
+  flex-basis: content;
+  flex-grow:1;
+  
+}
+.item1{
+  height: 100px;
+  margin: 5px;
+  background: #FCF2EC;
+  flex-grow:2;
+}
+.setWidth{
+  flex-basis:50px;
+  flex-grow:2;
 }
